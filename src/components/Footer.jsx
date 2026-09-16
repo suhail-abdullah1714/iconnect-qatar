@@ -10,12 +10,11 @@ function Footer() {
   const year = new Date().getFullYear()
 
   const whatsappUrl = createWhatsAppUrl(
-    'Hello IConnect Qatar, I would like to enquire about apartments and rooms.'
+    'Hello iConnectsNow Qatar, I would like to enquire about apartments and rooms.'
   )
 
   return (
     <footer className="bg-[#171717] px-6 pb-8 pt-20 text-white md:px-10 lg:px-14">
-
       <div className="mx-auto max-w-[1440px]">
 
         {/* TOP */}
@@ -26,22 +25,24 @@ function Footer() {
 
             <div className="flex items-center gap-3">
 
-              <div className="flex h-11 w-11 items-center justify-center rounded-full border border-[#B08A4A]/50">
-                <span className="text-sm font-semibold tracking-[-0.05em]">
-                  IC
-                </span>
+              {/* LOGO */}
+              <div className="flex h-11 w-11 items-center justify-center overflow-hidden rounded-full border border-[#B08A4A]/50 bg-white">
+                <img
+                  src="/properties/iconnectsNow.webp"
+                  alt="iConnectsNow Qatar"
+                  className="h-full w-full object-cover"
+                />
               </div>
 
+              {/* BRAND NAME */}
               <div>
-
                 <div className="text-lg font-semibold tracking-[-0.03em]">
-                  ICONNECT
+                  iConnectsNow
                 </div>
 
                 <div className="text-[8px] font-medium uppercase tracking-[0.3em] text-white/35">
                   Qatar
                 </div>
-
               </div>
 
             </div>
@@ -99,7 +100,7 @@ function Footer() {
                 href="#about"
                 className="text-sm text-white/50 transition-colors hover:text-white"
               >
-                About IConnect
+                About Us
               </a>
 
             </nav>
@@ -176,7 +177,7 @@ function Footer() {
                   className="text-[#B08A4A]"
                 />
 
-                WhatsApp IConnect
+                WhatsApp iConnectsNow
               </a>
 
             </div>
@@ -189,7 +190,7 @@ function Footer() {
         <div className="flex flex-col justify-between gap-5 pt-7 text-xs text-white/30 md:flex-row md:items-center">
 
           <p>
-            © {year} IConnect Qatar. All rights reserved.
+            © {year} iConnectsNow Qatar. All rights reserved.
           </p>
 
           <div className="flex items-center gap-6">
@@ -211,7 +212,6 @@ function Footer() {
         </div>
 
       </div>
-
     </footer>
   )
 }

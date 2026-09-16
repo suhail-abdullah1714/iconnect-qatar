@@ -18,7 +18,7 @@ function Navbar() {
   ]
 
   const whatsappUrl = createWhatsAppUrl(
-    'Hello IConnect Qatar, I would like to enquire about apartments and rooms.'
+    'Hello iConnectsNow Qatar, I would like to enquire about apartments and rooms.'
   )
 
   const closeMenu = () => {
@@ -39,29 +39,31 @@ function Navbar() {
         >
 
           {/* Logo */}
-          <a
-            href="#"
-            onClick={closeMenu}
-            className="group flex items-center gap-3"
-          >
-            <div className="relative flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-full border border-[#B08A4A]/35 bg-white/80 transition-all duration-300 group-hover:border-[#B08A4A]">
-              <span className="text-[12px] font-semibold tracking-[-0.08em] text-[#171717]">
-                IC
-              </span>
+<a
+  href="#"
+  onClick={closeMenu}
+  className="group flex items-center gap-2.5"
+>
+  {/* Actual Logo */}
+  <div className="flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-full bg-white md:h-11 md:w-11">
+    <img
+      src="/properties/iconnectsNow.webp"
+      alt="iConnectsNow Qatar"
+      className="h-full w-full object-cover"
+    />
+  </div>
 
-              <span className="absolute bottom-1.5 h-0.5 w-3 rounded-full bg-[#B08A4A]" />
-            </div>
+  {/* Brand Text */}
+  <div className="leading-none">
+    <div className="text-[14px] font-semibold tracking-[-0.035em] text-[#171717] md:text-[16px]">
+      iConnectsNow
+    </div>
 
-            <div className="leading-none">
-              <div className="text-[15px] font-semibold tracking-[-0.035em] text-[#171717] md:text-[16px]">
-                ICONNECT
-              </div>
-
-              <div className="mt-1 text-[7px] font-medium uppercase tracking-[0.32em] text-[#8A857C]">
-                Qatar
-              </div>
-            </div>
-          </a>
+    <div className="mt-1 text-[7px] font-medium uppercase tracking-[0.32em] text-[#8A857C]">
+      Qatar
+    </div>
+  </div>
+</a>
 
           {/* Desktop navigation */}
           <nav className="absolute left-1/2 hidden -translate-x-1/2 items-center rounded-full border border-[#E6E1D8]/70 bg-white/45 px-2 py-1.5 lg:flex">

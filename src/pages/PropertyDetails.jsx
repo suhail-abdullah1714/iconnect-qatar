@@ -30,7 +30,7 @@ function PropertyDetails() {
         <div className="text-center">
 
           <p className="text-xs uppercase tracking-[0.3em] text-[#B08A4A]">
-            IConnect Qatar
+            iConnectsNow Qatar
           </p>
 
           <h1 className="mt-4 text-4xl font-medium tracking-[-0.04em]">
@@ -46,7 +46,7 @@ function PropertyDetails() {
             className="mt-8 inline-flex items-center gap-2 rounded-full bg-[#171717] px-6 py-3.5 text-sm font-medium text-white"
           >
             <ArrowLeft size={16} />
-            Back to IConnect
+            Back to iConnectsNow
           </Link>
 
         </div>
@@ -56,7 +56,7 @@ function PropertyDetails() {
   }
 
   const whatsappMessage = `
-Hello IConnect Qatar,
+Hello iConnectsNow Qatar,
 
 I saw this example apartment on your website and would like to find something similar.
 
@@ -109,16 +109,20 @@ Thank you.
             className="group flex items-center gap-3"
           >
 
-            <div className="flex h-10 w-10 items-center justify-center rounded-full border border-[#B08A4A]/40 bg-white">
-              <span className="text-sm font-semibold tracking-[-0.05em]">
-                IC
-              </span>
+            {/* Logo */}
+            <div className="flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-full bg-white">
+              <img
+                src="/properties/iconnectsNow.webp"
+                alt="iConnectsNow Qatar"
+                className="h-full w-full object-cover"
+              />
             </div>
 
+            {/* Brand */}
             <div>
 
               <div className="text-[17px] font-semibold tracking-[-0.03em]">
-                ICONNECT
+                iConnectsNow
               </div>
 
               <div className="text-[8px] font-medium uppercase tracking-[0.3em] text-[#8A857C]">
@@ -169,7 +173,7 @@ Thank you.
         {/* GALLERY */}
         <section className="grid gap-3 lg:grid-cols-[1.55fr_1fr]">
 
-          {/* MAIN */}
+          {/* MAIN IMAGE */}
           <button
             type="button"
             onClick={() => setLightboxOpen(true)}
@@ -207,11 +211,13 @@ Thank you.
               onClick={() => setLightboxOpen(true)}
               className="group relative min-h-0 overflow-hidden bg-[#E8E4DC]"
             >
+
               <img
                 src={galleryImages[1]}
                 alt={`${property.title} interior`}
                 className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.025]"
               />
+
             </button>
 
             <button
@@ -219,11 +225,13 @@ Thank you.
               onClick={() => setLightboxOpen(true)}
               className="group relative min-h-0 overflow-hidden bg-[#E8E4DC]"
             >
+
               <img
                 src={galleryImages[2]}
                 alt={`${property.title} living space`}
                 className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.025]"
               />
+
             </button>
 
           </div>
@@ -277,7 +285,7 @@ Thank you.
 
                   <p className="mt-2 text-sm leading-6 text-[#777168]">
                     This apartment is shown as an example of the
-                    type of furnished residence IConnect can help
+                    type of furnished residence iConnectsNow can help
                     you find. Availability and pricing can change.
                   </p>
 
@@ -374,7 +382,7 @@ Thank you.
               </h2>
 
               <p className="mt-6 max-w-2xl text-base leading-8 text-[#6F6B63]">
-                IConnect works around your requirements rather
+                iConnectsNow works around your requirements rather
                 than asking you to search endlessly through
                 listings. Share your preferred location, budget,
                 apartment type and other requirements with our
@@ -442,6 +450,7 @@ Thank you.
                   size={17}
                   className="transition-transform duration-300 group-hover:scale-110"
                 />
+
               </a>
 
               <Link
@@ -453,7 +462,7 @@ Thank you.
 
               <p className="mt-5 text-center text-[11px] leading-5 text-[#9A948A]">
                 Your enquiry will open directly in WhatsApp with
-                IConnect.
+                iConnectsNow.
               </p>
 
             </div>

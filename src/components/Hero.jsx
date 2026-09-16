@@ -50,7 +50,7 @@ function Hero() {
 
             <div>
               <p className="text-[9px] font-semibold uppercase tracking-[0.28em] text-[#B08A4A] md:text-[10px]">
-                IConnect Qatar
+                iConnectsNow Qatar
               </p>
 
               <p className="mt-1 text-[11px] text-[#777168] md:text-xs">
@@ -80,7 +80,7 @@ function Hero() {
           {/* Description */}
           <p className="mt-7 max-w-xl text-[13px] leading-6 text-[#5F5A52] sm:text-[14px] md:mt-9 md:text-lg md:leading-8">
 
-            Tell us what you are looking for and let IConnect help
+            Tell us what you are looking for and let iConnectsNow help
             you discover apartments, studios and rooms that match
             your needs across Qatar.
 

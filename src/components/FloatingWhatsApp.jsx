@@ -3,9 +3,9 @@ import { createWhatsAppUrl } from '../utils/whatsapp'
 
 function FloatingWhatsApp() {
   const message = `
-Hello IConnect Qatar,
+Hello iConnectsNow Qatar,
 
-I would like to enquire about apartments and rooms available through IConnect.
+I would like to enquire about apartments and rooms available through iConnectsNow.
 
 Please help me with suitable options.
 
@@ -19,7 +19,7 @@ Thank you.
       href={whatsappUrl}
       target="_blank"
       rel="noreferrer"
-      aria-label="Contact IConnect on WhatsApp"
+      aria-label="Contact iConnectsNow Qatar on WhatsApp"
       className="fixed bottom-5 right-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#171717] text-white shadow-[0_12px_35px_rgba(0,0,0,0.18)] transition-all duration-300 hover:-translate-y-1 hover:bg-[#B08A4A] md:bottom-7 md:right-7"
     >
       <MessageCircle
